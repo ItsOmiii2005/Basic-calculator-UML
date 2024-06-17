@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Calculator.css';
+import '../css/Calculator.css';
 
 const Calculator = () => {
   const [input, setInput] = useState('');
@@ -9,9 +9,13 @@ const Calculator = () => {
     setInput((prevInput) => prevInput + value);
   };
 
+  const handleBackspace = () => {
+    setInput((prevInput) => prevInput.slice(0, -1));
+  };
+
   const handleClear = () => {
     setInput('');
-    setResult('');
+    setResult('Result will be displayed here ;)');
   };
 
   const handleCalculate = () => {
@@ -31,7 +35,7 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <div className="display">
-        <input type="text" value={input}  onChange={(e) => setInput(e.target.value)}/>
+        <input type="text" value={input}  onChange={(e) => setInput(e.target.value)} placeholder='Enter Expression Here...'/>
         <div className="result">{result}</div>
       </div>
         <hr />
@@ -57,6 +61,7 @@ const Calculator = () => {
         <button onClick={() => handleButtonClick('/')}>/</button>
         <button onClick={handleCalculate}>=</button>
         <button onClick={handleClear}>Clear</button>
+        <button onClick={handleBackspace}>Backspace</button>
       </div>
     </div>
   );

@@ -1,11 +1,9 @@
-// import React from 'react';
-import Calculator from './Calculator';
-// import './App.css';
+import CalculatorView from './views/CalculatorView';
 
 function App() {
   return (
     <div className="App">
-      <Calculator />
+      <CalculatorView />
     </div>
   );
 }
