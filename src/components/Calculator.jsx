@@ -26,7 +26,7 @@ const Calculator = () => {
       // Evaluate the expression using eval
       const evalResult = eval(evalInput);
       if (!isFinite(evalResult)) throw new Error('Math error');
-      setResult(evalResult);
+      setResult("Answer: " + evalResult);
     } catch (error) {
       setResult('Error ! Please Enter Valid Expression');
     }
@@ -34,6 +34,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
+      <h2 style={{textAlign: 'center'}}>|| Basic Calculator ||</h2>
       <div className="display">
         <input type="text" value={input}  onChange={(e) => setInput(e.target.value)} placeholder='Enter Expression Here...'/>
         <div className="result">{result}</div>
