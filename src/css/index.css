@@ -5,3 +5,68 @@ body{
   color: white;
   background: #ff5858;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .calculator {
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .display input {
+    font-size: 1em;
+  }
+
+  .result {
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  .buttons button {
+    padding: 15px;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .display input {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .result {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .buttons button {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 360px) {
+  .buttons button {
+    padding: 8px;
+    font-size: 1em;
+  }
+
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  .header p {
+    font-size: 0.8em;
+  }
+
+  .footer p {
+    font-size: 0.8em;
+  }
+}

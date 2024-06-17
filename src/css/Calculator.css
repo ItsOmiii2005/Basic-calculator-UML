@@ -1,5 +1,6 @@
 .calculator {
-  width: 50rem;
+  width: 90%;
+  max-width: 50rem;
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -27,16 +28,13 @@
   font-size: 1.5em;
   margin-top: 10px;
   margin-inline: auto;
-
   background-color: #ffffff;
   border: 2px solid #000000;
   font-weight: bold;
   border-radius: 10px;
   text-align: center;
-  width: 50.5%;
-  /* text-align: right; */
-  margin-bottom: 10px;
-  
+  width: 100%;
+  max-width: 50%;
   color: #000000;
 }
 
@@ -66,4 +64,3 @@
   box-shadow: 0 2px #bbb, 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: translateY(2px);
 }
-
